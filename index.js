@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('KIVA SERVER IS RUNNING');
+  res.send('KIVA SERVER IS RUNNING!');
 });
 
 const PORT = process.env.PORT || 10000;
