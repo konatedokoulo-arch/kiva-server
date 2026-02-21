@@ -10,6 +10,8 @@ app.get('/', (req, res) => {
   res.send('KIVA SERVER IS RUNNING');
 });
 
-app.listen(5000, () => {
-  console.log('KIVA SERVER STARTED ON PORT 5000');
+const PORT = process.env.PORT || 10000;
+
+app.listen(PORT, () => {
+  console.log(`KIVA SERVER STARTED ON PORT ${PORT}`);
 });
